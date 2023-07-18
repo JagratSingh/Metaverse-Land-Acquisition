@@ -78,6 +78,7 @@ function App() {
 		loadBlockchainData()
 	}, [account])
 
+	//Buy Land
 	const buyHandler = async (_id) => {
 		try {
 			await landContract.methods.mint(_id).send({ from: account, value: '1000000000000000000' })
@@ -93,6 +94,7 @@ function App() {
 		}
 	}
 
+	//Transfer Owned Land
 	const sellHandler = async (event) => {
 		event.preventDefault()
 		try {

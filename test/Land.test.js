@@ -6,8 +6,8 @@ const EVM_REVERT = 'VM Exception while processing transaction: revert'
 
 contract('Land', ([owner1, owner2]) => {
 
-    const NAME = 'Multiverse'
-    const SYMBOL = 'MUL'
+    const NAME = 'Multiverse Land Acquisition'
+    const SYMBOL = 'MLA'
     const COST = web3.utils.toWei('0.01', 'ether')
 
     let land, result
