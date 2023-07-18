@@ -43,7 +43,8 @@ function App() {
 				setAccount(accounts[0])
 			}
 
-			// const networkId = await web3.eth.net.getId()
+			// const networkId = await web3.eth.net.getId() 
+			// Land.networks[networkId].address
 			
 			const land = new web3.eth.Contract(Land.abi, '0x3FE9Ef1c45D924a928e07F9B7b028A772B189f0b')
 			setLandContract(land)
@@ -186,7 +187,7 @@ function App() {
 					)}
 					{hasOwner && (
 						<form ref={byRef} onSubmit={sellHandler}>
-							<input type="text" name="Address" onChange={(e) => setNewOwnerAddress(e.target.value)} />
+							<input type="text" name="Address" placeholder='Receivers Address' className='address' onChange={(e) => setNewOwnerAddress(e.target.value)} />
 							<button type='submit' className='button info--buy'>Transfer</button>
 						</form>
 						

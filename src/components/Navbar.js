@@ -10,7 +10,7 @@ const Navbar = ({ web3Handler, account }) => {
                 rel="noopener noreferrer"
             >
                 <img src={logo} className="App-logo" alt="logo" />
-                LAND
+                M-L-A
             </a>
 
             {account ? (
